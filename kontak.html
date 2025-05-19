@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kontak Saya</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: cyan;
+      color: black;
+      text-align: center;
+      padding: 50px;
+    }
+
+    form {
+      background-color: rgba(255,255,255,0.2);
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: black;
+      color: cyan;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: white;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Kontak Saya</h1>
+
+  <form action="https://formsubmit.co/febrianilham58@gmail.com" method="POST">
+    <!-- FormSubmit akan kirim ke email ini -->
+    
+    <input type="text" name="name" placeholder="Nama" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" rows="5" placeholder="Tulis pesan..." required></textarea>
+
+    <!-- Optional anti-spam -->
+    <input type="hidden" name="_captcha" value="false">
+    
+    <!-- Redirect setelah kirim -->
+    <input type="hidden" name="_next" value="https://iamxy002.github.io/porto2/thankyou.html">
+
+    <button type="submit">Kirim</button>
+  </form>
+
+</body>
+</html>
